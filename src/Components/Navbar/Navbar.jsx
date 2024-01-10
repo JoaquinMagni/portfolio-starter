@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>  
 
         <button className="button n-button">
-            Contáctame
+            Contácto
         </button>
     </div>
   )
