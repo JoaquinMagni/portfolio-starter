@@ -1,0 +1,58 @@
+import React, { useState } from 'react';
+import "./Contacto.css";
+import emailjs from '@emailjs/browser';
+
+import { useRef } from "react";
+
+const Contacto = () => {
+
+    const form = useRef();
+
+    const [done, setDone] = useState(false)
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_3zydiwn', 'template_w13w4fc', form.current, 'dNrZ30FK8SrwB1zQ0')
+        .then((result) => {
+            console.log(result.text);
+            setDone(true);
+            form.current.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
+  return (
+    <div className="contact-form">        
+        <div className="w-left">
+            <div className="awesome">
+                <span>Completa el formulario y</span>
+                <span>Contáctame</span>
+                <div
+                    className="blur s-blur"
+                    style={{ background: "#ABF1FF94" }}
+                ></div>
+            </div>
+        </div>
+
+        <div className="c-right">
+            <form ref={form} onSubmit={sendEmail}>
+                <input type="text" name="user_name" className="user" placeholder="Nombre" />
+                <input type="email" name="user_email" className="user" placeholder="Email" />
+                <textarea name="message" className="user textarea" placeholder="Mensaje" />
+                <input type="submit" value="Enviar" className="button" />
+                <span>{done && "¡Gracias por contactarme!"}</span>
+                <div 
+                    className="blur c-blur"
+                    style={{ background: "var(--purple)" }}
+                ></div>
+            </form>
+        </div>
+
+
+    </div>
+  )
+}
+
+export default Contacto

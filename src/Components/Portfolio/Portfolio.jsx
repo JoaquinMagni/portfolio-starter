@@ -1,10 +1,12 @@
 import React from 'react'
 import './Portfolio.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Sidebar from '../../img/sidebar.png';
-import Ecommerce from '../../img/ecommerce.png';
-import HOC from '../../img/hoc.png';
-import MusicApp from '../../img/musicapp.png';
+import Resto from '../../img/resto.png';
+import Planificador from '../../img/planificador.png';
+import Veterinaria from '../../img/veterinaria.png';
+import Blogcafe from '../../img/blogcafe.png';
+import Festival from '../../img/festival.png';
+
 import 'swiper/css'
 
 const Portfolio = () => {
@@ -16,22 +18,66 @@ const Portfolio = () => {
         <span>Portfolio</span>
 
         {/* Slider */}
-        <Swiper>
+        <Swiper
+        spaceBetween={30}
+        slidesPerView={3}
+        grabCursor={true}
+        className="portfolio-slider"
+        >
 
             <SwiperSlide>
-                <img src={Sidebar} alt="" />
+                <a
+                    href="https://restococina.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >                    
+                    <img src={Resto} alt="" />
+                    <button>VISITAR</button>
+                </a>
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src={Ecommerce} alt="" />
+                <a
+                    href="https://presupuesto-de-gasto.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > 
+                    <img src={Planificador} alt="" />
+                    <button>VISITAR</button>
+                </a>
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src={HOC} alt="" />
+                <a
+                    href="https://stylo-pet.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > 
+                    <img src={Veterinaria} alt="" />
+                    <button>VISITAR</button>
+                </a>
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src={MusicApp} alt="" />
+                <a
+                    href="https://festivaldemusicapop.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > 
+                    <img src={Festival} alt="" />
+                    <button>VISITAR</button>
+                </a>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <a 
+                    href="https://blogdecafeejemplojoaquin.netlify.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img src={Blogcafe} alt="" />
+                    <button>VISITAR</button>
+                </a>                
             </SwiperSlide>
 
         </Swiper>

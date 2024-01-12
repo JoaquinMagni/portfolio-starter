@@ -1,0 +1,74 @@
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: -20rem; /* este tambien lo puse yo NO ES ORIGINAL DEL VIDEO */
+}
+
+.portfolio span:nth-child(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.portfolio span:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* slider */
+.portfolio .swiper {
+    overflow: visible!important;
+}
+
+.portfolio-slider {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.portfolio-slider .swiper-slide {
+    width: 20rem;
+    position: relative; /* Añadido para posicionar el botón */
+}
+
+.portfolio img {
+    width: 19rem;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+    border-radius: 19px;
+    display: block; /* Añadido para asegurar que la imagen se muestre correctamente */
+}
+
+/* Estilos para el botón sobre la imagen */
+.portfolio-slider .swiper-slide a {
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio-slider .swiper-slide button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    outline: none;
+    margin-top: 5rem;
+}
+
+.portfolio-slider .swiper-slide button:hover {
+    background-color: #0056b3;
+}
+
+.portfolio-slider .swiper-slide button:focus {
+    outline: none;
+}
