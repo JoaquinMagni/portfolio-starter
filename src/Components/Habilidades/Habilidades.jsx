@@ -5,12 +5,18 @@ import Fiverr from "../../img/fiverr.png"
 import Amazon from "../../img/amazon.png"
 import Shopify from "../../img/Shopify.png"
 import Facebook from "../../img/Facebook.png"
+import { themeContext } from '../../Context'
+import { useContext } from "react";
 
 const Habilidades = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode
+
   return (
-    <div className="works">
+    <div className="works" id='Habilidades'>
         <div className="awesome">
-            <span>Mis Habilidades</span>
+            <span style={{color: darkMode? 'white' : ''}}>Mis Habilidades</span>
             <span>Diseño y Desarrollo</span>
             <spane>
                 Diferentes proyectos, utilizando herramientas JS, React, Astro y demás.

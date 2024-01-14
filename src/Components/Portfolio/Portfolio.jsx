@@ -6,15 +6,21 @@ import Planificador from '../../img/planificador.png';
 import Veterinaria from '../../img/veterinaria.png';
 import Blogcafe from '../../img/blogcafe.png';
 import Festival from '../../img/festival.png';
+import { themeContext } from '../../Context'
+import { useContext } from "react";
 
 import 'swiper/css'
 
 const Portfolio = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
-    <div className="portfolio">
+    <div className="portfolio" id='Portfolio'>
 
         {/* Heading */}
-        <span>Proyectos Recientes</span>
+        <span style={{color: darkMode? 'white' : ''}}>Proyectos Recientes</span>
         <span>Portfolio</span>
 
         {/* Slider */}
@@ -23,6 +29,14 @@ const Portfolio = () => {
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
+        /*breakpoints={{
+            480: {
+                slidesPerView: 3,
+              },
+              0: {
+                slidesPerView: 1,
+              },
+        }} CON ESE CODIGO EN TEORIA SE APLICA UN MQ PARA EL SWIPER */
         >
 
             <SwiperSlide>

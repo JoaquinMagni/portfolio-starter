@@ -24,6 +24,7 @@
     overflow: visible!important;
 }
 
+
 .portfolio-slider {
     margin-top: 3rem;
     width: 100%;
@@ -72,3 +73,12 @@
 .portfolio-slider .swiper-slide button:focus {
     outline: none;
 }
+
+
+@media screen and (max-width: 480px) {
+    .portfolio{
+        margin-top: -13rem;
+        text-align: center;
+    }    
+
+  }

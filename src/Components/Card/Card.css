@@ -40,6 +40,7 @@
 
 .cards>*{
     position: absolute;
+    /* CUANDO ELIMINO ESTO LAS CARDS SE ALINEAN EN UN DISPOSITIVO MOVIL UNA ARRIBA DE LA OTRA */
 }
 
 /* blur */
@@ -52,3 +53,10 @@
     top: 13rem;
     left: -18rem;
 }
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: auto;
+    }
+
+  }

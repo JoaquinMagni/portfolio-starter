@@ -5,13 +5,19 @@ import Glasses from '../../img/glasses.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card'
 import Curriculum from './Curriculum.pdf'
+import { themeContext } from '../../Context'
+import { useContext } from "react";
 
 const Servicios = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
-    <div className="services">
+    <div className="services" id='Servicios'>
         {/* Lado Izquierdo */}
         <div className="awesome">
-        <span>Mis Increíbles</span>
+        <span style={{color: darkMode? 'white' : ''}}>Mis Increíbles</span>
         <span>servicios</span>
         <spane>
             Como desarrollador React, me considero un apasionado por el código.
