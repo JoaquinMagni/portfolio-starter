@@ -9,7 +9,8 @@ import Festival from '../../img/festival.png';
 import { themeContext } from '../../Context'
 import { useContext } from "react";
 
-import 'swiper/css'
+import 'swiper/css';
+import { Pagination } from 'swiper/modules';
 
 const Portfolio = () => {
 
@@ -25,18 +26,27 @@ const Portfolio = () => {
 
         {/* Slider */}
         <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-        /*breakpoints={{
-            480: {
-                slidesPerView: 3,
-              },
-              0: {
-                slidesPerView: 1,
-              },
-        }} CON ESE CODIGO EN TEORIA SE APLICA UN MQ PARA EL SWIPER */
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }}
+        modules={[Pagination]}
+        className="portfolio-slider"               
         >
 
             <SwiperSlide>
@@ -45,8 +55,7 @@ const Portfolio = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >                    
-                    <img src={Resto} alt="" />
-                    <button>VISITAR</button>
+                    <img src={Resto} alt="" />                    
                 </a>
             </SwiperSlide>
 
@@ -57,7 +66,6 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                 > 
                     <img src={Planificador} alt="" />
-                    <button>VISITAR</button>
                 </a>
             </SwiperSlide>
 
@@ -68,7 +76,6 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                 > 
                     <img src={Veterinaria} alt="" />
-                    <button>VISITAR</button>
                 </a>
             </SwiperSlide>
 
@@ -79,7 +86,6 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                 > 
                     <img src={Festival} alt="" />
-                    <button>VISITAR</button>
                 </a>
             </SwiperSlide>
 
@@ -90,7 +96,6 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                 >
                     <img src={Blogcafe} alt="" />
-                    <button>VISITAR</button>
                 </a>                
             </SwiperSlide>
 

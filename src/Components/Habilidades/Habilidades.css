@@ -2,12 +2,13 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 99vh;
-    margin-top: 4rem;
+    margin-top: -5rem;
 }
 
 /* Lado Derecho */
 .w-right {
     position: relative;
+    left: -3rem; /* Ajusta la distancia desde la izquierda */
 }
 
 .w-mainCircle {
@@ -97,15 +98,22 @@
         gap: 5rem;
     }
 
+    .button{
+        margin-top: 5rem;
+    }
+
     .w-right{
         display: flex;
         align-items: flex-start;
         justify-content: start;
-        transform: scale(0.7);
+        transform: scale(0.6);
+        left: 0%;
+        margin-top: -1rem;
     }
 
     .w-mainCircle{
         position: static;
+
     }
 
     .w-backCircle{

@@ -31,29 +31,75 @@
     margin-top: 1rem;
 }
 
+.card-1 {
+    position: relative; /* o absolute, dependiendo del contexto */
+    transform: scale(0.8);
+    top: 2rem; /* Ajusta la distancia desde la parte superior */
+    left: 5rem; /* Ajusta la distancia desde la izquierda */
+}
+
+.card-2 {
+    position: relative; /* o absolute, dependiendo del contexto */
+    transform: scale(0.8);
+    top: 10rem; /* Ajusta la distancia desde la parte superior */
+}
+
+.card-3 {
+    position: relative; /* o absolute, dependiendo del contexto */
+    transform: scale(0.8);
+    top: 13rem; /* Ajusta la distancia desde la parte superior */
+}
+
+
 .s-button {
     width: 8rem;
     height: 2rem;
     margin-top: 1rem;
 }
 
+
 @media screen and (max-width: 480px) {
-    .services{
+    .services {
         margin-top: 0;
         flex-direction: column;
         gap: 5rem;
-        height: 66rem;
+        height: auto; /* Cambiado de 66rem a auto para adaptarse al contenido */
         padding: 0;
     }
 
-    .cards{
+    .awesome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .cards {
         display: flex;
         flex-direction: column;
-        gap: 17rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-1, .card-2, .card-3 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 1rem 0; /* Ajusta el espacio entre las tarjetas */
     }
 
-    .cards>*{
-        position: static;
+    .card-1{
+        position: relative;
+        margin-right: 19rem;
     }
 
-  }
+    .card-2{
+        position: relative;
+        margin-left: 17.5rem;
+    }
+
+    .card-3{
+        position: relative;
+        width: 9.5rem;
+        margin-right: 15rem;
+    }
+}

@@ -5,13 +5,23 @@
     gap: 5rem;
     height: 30vh;
     margin-bottom: 8rem;
-    margin-top: -15rem; /* lo puse yo */    
+    margin-top: -10rem; /* lo puse yo */   
+    transform: scale(1.2);     
 }
 
 .achievement{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.achievement.a1{
+    margin-right: 3rem;
+}
+
+.achievement.a2{
+    margin-left: 3rem;
 }
 
 .circle {
@@ -46,8 +56,12 @@
 }
 
 @media screen and (max-width: 480px) {
+    .achievement{
+        transform: scale(1.6);
+    }
     .experience {
         transform: scale(0.7);
+        margin-top: 25rem;
     }
 
   }

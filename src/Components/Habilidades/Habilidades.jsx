@@ -5,6 +5,11 @@ import Fiverr from "../../img/fiverr.png"
 import Amazon from "../../img/amazon.png"
 import Shopify from "../../img/Shopify.png"
 import Facebook from "../../img/Facebook.png"
+import Html from "../../img/html5.png"
+import Javascript from "../../img/javascript.png"
+import Node from "../../img/node.png"
+import Astro from "../../img/astro.png"
+import ReactImage from "../../img/react.png"
 import { themeContext } from '../../Context'
 import { useContext } from "react";
 
@@ -16,16 +21,16 @@ const Habilidades = () => {
   return (
     <div className="works" id='Habilidades'>
         <div className="awesome">
-            <span style={{color: darkMode? 'white' : ''}}>Mis Habilidades</span>
-            <span>Diseño y Desarrollo</span>
-            <spane>
-                Diferentes proyectos, utilizando herramientas JS, React, Astro y demás.
+            <span style={{color: darkMode? 'white' : ''}}>Mis Habilidades De</span>
+            <span>Desarrollo</span>
+            <spane style={{color: darkMode? 'white' : ''}}>
+                El uso de diferentes tecnologías es indispensable a la hora de realizar un buen proyecto.
                 <br /> 
-                Diseño completamente responsive.
+                Diferentes tecnologías como Javascript, React, Node, Next JS, garantizan un proyecto excelente. 
                 <br />
-                Una simple muestra de mis habilidades de desarrollador Frontend.
+                Es indispensable estar al tanto sobre las actualizaciones de los lenguajes para un mejor código.
                 <br /> 
-                Aca ya no se que carajo poner.
+                Un código LIMPIO y FUNCIONAL es el resultado de trabajar con las tecnologías de vanguardia.
             </spane>
                         
             <button className="button s-button">Contrátame</button>
@@ -35,26 +40,27 @@ const Habilidades = () => {
 
         {/* Lado derecho */}
         <div className="w-right">
-            <div className="w-mainCircle">
+            <div className="w-mainCircle"
+            >
 
                 <div className="w-secCircle">
-                    <img src={Upwork} alt="" />
+                    <img src={Html} alt="" />
                 </div>
 
                 <div className="w-secCircle">
-                    <img src={Fiverr} alt="" />
+                    <img src={Javascript} alt="" />
                 </div>
 
                 <div className="w-secCircle">
-                    <img src={Amazon} alt="" />
+                    <img src={ReactImage} alt="" />
                 </div>
 
                 <div className="w-secCircle">
-                    <img src={Shopify} alt="" />
+                    <img src={Node} alt="" />
                 </div>
 
                 <div className="w-secCircle">
-                    <img src={Facebook} alt="" />
+                    <img src={Astro} alt="" />
                 </div>
             </div>
             {/* Background Circles */}

@@ -4,14 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 1rem;
     flex-direction: column;
     gap: 2rem;
     position: relative;
 }
 
 .t-heading{
-    align-self: start;
+    text-align: center;
 }
 
 .t-heading>*{
@@ -79,6 +79,17 @@
 @media screen and (max-width: 480px) {
     .t-wrapper{
         padding: 0;
+    }
+    .t-heading{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -2rem;
+    }
+    .testimonial{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .testimonial>img{
         width: 70px;

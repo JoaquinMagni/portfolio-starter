@@ -13,12 +13,13 @@
     flex-direction: column;
     width: 100%;
     margin-top: 4rem;
-    gap: 4rem;
+    gap: 2rem;
     color: white;    
 }
 
 .f-content span {
     font-size: 130%;
+    margin-top: 3rem;
 }
 
 .f-icons{
@@ -29,6 +30,7 @@
 @media screen and (max-width: 480px) {
     .f-content {
         transform: scale(.5);
+        margin-bottom: 2.5rem;
     }    
 
 }
