@@ -13,6 +13,8 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { themeContext } from '../../Context'
 import { useContext } from "react";
 
+import { Link } from 'react-scroll'
+
 const Intro = () => {
 
     const theme = useContext(themeContext);
@@ -25,21 +27,34 @@ const Intro = () => {
             <div className="i-name">
                 <span style={{color: darkMode? 'white' : ''}}>¡Hola! Soy</span>
                 <span>Joaquín Magni</span>
-                <span style={{color: darkMode? 'white' : ''}}>Desarrollador Frontend, con una gran capacidad de aprendizaje e interés por el diseño y desarrollo, dando como resultado trabajos de calidad.</span>
+                <span style={{color: darkMode? 'white' : ''}}>Desarrollador React Frontend, con una gran capacidad de aprendizaje e interés por el diseño y desarrollo, dando como resultado trabajos de calidad.</span>
             </div>
-
-            <button className="button i-button">Contrátame</button>
+            <Link spy={true} to='Contacto' smooth={true}>                
+                <button className= "button i-button">Contrátame</button>
+            </Link>
 
             <div className="i-icons">
-                <a href='https://github.com/JoaquinMagni'>
+                <a 
+                  href='https://github.com/JoaquinMagni'
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                 <img src={Github} alt="" />
                 </a>
 
-                <a href='https://www.linkedin.com/in/joaquin-magni/'>
+                <a 
+                  href='https://www.linkedin.com/in/joaquin-magni/'
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                 <img src={LinkedIn} alt="" />
                 </a>
 
-                <a href='https://www.instagram.com/magni.joaqa/'>                    
+                <a 
+                  href='https://www.instagram.com/magni.joaqa/'
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >                    
                 <img src={Instagram} alt="" />
                 </a>
             </div>

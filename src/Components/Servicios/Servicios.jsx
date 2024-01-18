@@ -24,7 +24,7 @@ const Servicios = () => {
             <br /> 
                 Pudiendo colaborar en ambas etapas de desarrollo, ya sea UX ó UI.
             </spane>
-            <a href={Curriculum} download>            
+            <a href={Curriculum} download>                        
             <button className="button s-button">Descargar CV</button>
             </a>
             <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>

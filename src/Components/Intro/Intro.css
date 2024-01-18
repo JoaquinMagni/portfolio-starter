@@ -15,6 +15,7 @@
 .i-name{
     display: flex;
     flex-direction: column;
+    font-family: 'Acme';
 }
 
 .i-name > :nth-child(1) 
@@ -39,9 +40,14 @@
     margin-top: 10px;
 }
 
-.i-button{
+
+.i-button{    
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width: 6rem;
     height: 2rem;
+    
 }
 
 .i-icons {
@@ -84,9 +90,10 @@
 
 .i-right>:nth-child(3)
 {
-    transform: scale(0.8);
-    left: 8%;
+    transform: scale(0.6);    
     margin-top: -5rem;
+    margin-right: 5rem;
+    margin-left: -5rem;
 }
 
 .i-right>:nth-child(4)

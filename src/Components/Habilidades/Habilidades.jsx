@@ -1,10 +1,5 @@
 import React from 'react'
 import './Habilidades.css'
-import Upwork from "../../img/Upwork.png"
-import Fiverr from "../../img/fiverr.png"
-import Amazon from "../../img/amazon.png"
-import Shopify from "../../img/Shopify.png"
-import Facebook from "../../img/Facebook.png"
 import Html from "../../img/html5.png"
 import Javascript from "../../img/javascript.png"
 import Node from "../../img/node.png"

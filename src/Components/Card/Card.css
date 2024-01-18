@@ -38,6 +38,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    .cards{
+        margin-right: 4rem;
+    }
     .card{
         position: relative;
         width: auto;

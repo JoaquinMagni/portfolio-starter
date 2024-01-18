@@ -5,7 +5,6 @@ import Servicios from "./Components/Servicios/Servicios";
 import Experiencia from "./Components/Experiencia/Experiencia";
 import Habilidades from "./Components/Habilidades/Habilidades";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import Testimonial from "./Components/Testimonial/Testimonial";
 import Contacto from "./Components/Contacto/Contacto";
 import Footer from "./Components/Footer/Footer";
 import { themeContext } from "./Context";
@@ -20,7 +19,7 @@ function App() {
       style={{
         background : darkMode? 'black': '',
         color : darkMode? 'white': ''
-      }}
+      }}      
     >
       <Navbar/>
       <Intro/>
@@ -28,7 +27,6 @@ function App() {
       <Experiencia/>
       <Habilidades/>
       <Portfolio/>
-      <Testimonial/>
       <Contacto />
       <Footer />
     </div>

@@ -30,7 +30,7 @@ const Contacto = () => {
     };
 
   return (
-    <div className="contact-form">        
+    <div className="contact-form" id='Contacto'>        
         <div className="w-left">
             <div className="awesome">
                 <span style={{color: darkMode? 'white' : ''}}>Completa el formulario y</span>

@@ -4,8 +4,8 @@
     justify-content: center;
     gap: 5rem;
     height: 30vh;
-    margin-bottom: 8rem;
-    margin-top: -10rem; /* lo puse yo */   
+    margin-bottom: 15rem;
+    margin-top: -12rem; /* lo puse yo */   
     transform: scale(1.2);     
 }
 
@@ -61,7 +61,8 @@
     }
     .experience {
         transform: scale(0.7);
-        margin-top: 25rem;
+        margin-top: 16rem;
+        margin-bottom: 25rem;
     }
 
   }

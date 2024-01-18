@@ -29,19 +29,15 @@ const Navbar = () => {
 
                     <Link spy={true} to='Portfolio' smooth={true}>
                     <li>Portfolio</li>
-                    </Link>  
-
-                    <Link spy={true} to='Testimoniales' smooth={true}>
-                    <li>Testimoniales</li>
-                    </Link>                 
-                    
+                    </Link>                         
                 </ul>                
             </div>
         </div>  
-
-        <button className="button n-button">
-            Contácto
-        </button>
+        <Link spy={true} to='Contacto' smooth={true}>
+            <button className="button n-button">
+                Contácto
+            </button>
+        </Link>
     </div>
   )
 }

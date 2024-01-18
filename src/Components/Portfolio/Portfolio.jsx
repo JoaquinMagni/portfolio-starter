@@ -22,7 +22,7 @@ const Portfolio = () => {
 
         {/* Heading */}
         <span style={{color: darkMode? 'white' : ''}}>Proyectos Recientes</span>
-        <span>Portfolio</span>
+        <span>PORTFOLIO</span>
 
         {/* Slider */}
         <Swiper
@@ -31,7 +31,7 @@ const Portfolio = () => {
         pagination={{
           clickable: true,
         }}
-        breakpoints={{
+        breakpoints={{         
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
