@@ -38,6 +38,8 @@
 
 .textarea{
     height: 4rem!important;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .c-blur1{
