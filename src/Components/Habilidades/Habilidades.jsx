@@ -28,7 +28,7 @@ const Habilidades = () => {
                 Un código LIMPIO y FUNCIONAL es el resultado de trabajar con las tecnologías de vanguardia.
             </spane>
                         
-            <button className="button s-button">Contrátame</button>
+            <button className="button s-button">CONTRÁTAME</button>
             
             <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
         </div>
