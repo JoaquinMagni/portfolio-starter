@@ -2,6 +2,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .n-left{
@@ -36,11 +37,11 @@
     margin-right: 10rem;
 }
 
-.n-list > ul > li:hover{
+.hovernaranja:hover{
     cursor: pointer;
     color: #ff8000;
-    
 }
+
 
 .n-button{
     position: static;

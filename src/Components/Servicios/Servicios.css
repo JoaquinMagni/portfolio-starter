@@ -97,7 +97,8 @@
         left: 50%;
         transform: translateX(-50%);
         margin: 1rem 0; /* Ajusta el espacio entre las tarjetas */
-        width: 10rem;
+        width: 12rem;
+        height: 8rem;        
     }
 
     .card-1{

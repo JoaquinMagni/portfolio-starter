@@ -16,26 +16,26 @@ const Navbar = () => {
             <div className="n-list">
                 <ul style={{listStyleType: 'none'}}>
                     <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
-                    <li>Home</li>
+                    <li className="hovernaranja">HOME</li>
                     </Link>
 
                     <Link spy={true} to='Servicios' smooth={true}>
-                    <li>Servicios</li>
+                    <li className="hovernaranja">SERVICIOS</li>
                     </Link>
 
                     <Link spy={true} to='Habilidades' smooth={true}>
-                    <li>Habilidades</li>
+                    <li className="hovernaranja">HABILIDADES</li>
                     </Link>
 
                     <Link spy={true} to='Portfolio' smooth={true}>
-                    <li>Portfolio</li>
+                    <li className="hovernaranja">PORTFOLIO</li>
                     </Link>                         
                 </ul>                
             </div>
         </div>  
         <Link spy={true} to='Contacto' smooth={true}>
             <button className="button n-button">
-                Contácto
+                CONTÁCTO
             </button>
         </Link>
     </div>
