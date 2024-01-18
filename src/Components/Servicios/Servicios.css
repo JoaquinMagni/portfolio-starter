@@ -60,9 +60,10 @@
 .s-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     width: 8rem;
-    height: 2rem;
+    height: 3rem;
     margin-top: 1rem;
 }
 
