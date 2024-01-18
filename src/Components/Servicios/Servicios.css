@@ -98,7 +98,8 @@
         transform: translateX(-50%);
         margin: 1rem 0; /* Ajusta el espacio entre las tarjetas */
         width: 12rem;
-        height: 8rem;        
+        height: 8rem;   
+        align-items: center;     
     }
 
     .card-1{
