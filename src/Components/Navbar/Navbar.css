@@ -50,7 +50,12 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {       
+    .n-left{
+        display: flex;
+        justify-content: center;
+        margin-left: 1.5rem;
+    }
     .n-list{
         display: none;
     }

@@ -53,8 +53,7 @@
         flex-direction: column;
         gap: 5rem;
         height: 40rem;
-        margin-bottom: -5rem;
-        transform: scale(0.9);
+        margin-bottom: -5rem;        
         margin-top: 22rem;
     }
     .awesome {
@@ -65,6 +64,10 @@
 
     .button{
         margin-top: 1rem;
+    }
+
+    .c-right{
+        transform: scale(0.95);
     }
 
     .c-right .user{

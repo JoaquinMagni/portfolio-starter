@@ -100,8 +100,7 @@
     top: 8rem;
 }
 
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .works {
       flex-direction: column;
       height: 55rem;
@@ -116,7 +115,7 @@
       align-items: center;
       justify-content:center;
       transform: scale(0.7);
-      margin-top: 2rem;
+      margin-top: 4rem;
       margin-left: 3rem;
     }
     .w-mainCircle{

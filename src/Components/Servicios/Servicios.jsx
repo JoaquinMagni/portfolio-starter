@@ -17,8 +17,8 @@ const Servicios = () => {
     <div className="services" id='Servicios'>
         {/* Lado Izquierdo */}
         <div className="awesome">
-            <span style={{color: darkMode? 'white' : ''}}>Mis Increíbles</span>
-            <span>servicios</span>
+            <span style={{color: darkMode? 'white' : ''}}>Mis</span>
+            <span>Servicios</span>
             <spane style={{color: darkMode? 'white' : ''}}>
                 Como desarrollador React, me considero un apasionado por el código.
             <br /> 
