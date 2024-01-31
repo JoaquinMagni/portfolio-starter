@@ -43,7 +43,7 @@ const Intro = () => {
                 </a>
 
                 <a 
-                  href='https://www.linkedin.com/in/joaquin-magni/'
+                  href='https://www.linkedin.com/in/joaquinmagnidev/'
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
