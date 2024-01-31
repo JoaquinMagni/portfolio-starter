@@ -87,7 +87,7 @@
 
  @media screen and (min-width: 1224px) and (max-width: 1824px) {
   .portfolio{
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   .portfolio span:nth-of-type(2) {

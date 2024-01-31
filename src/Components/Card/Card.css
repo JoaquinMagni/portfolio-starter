@@ -52,30 +52,20 @@
     }
   }
 
- /* Media query para PC escritorio */
+
+
+  /* Media query para PC escritorio 
  @media screen and (min-width: 1025px) and (max-width: 1224px) {
     .card > span:nth-child(2) {
         margin-top: 1rem;
-        font-size: 30px; /* Cambia esto al tamaño de fuente que desees para 'heading' */
+        font-size: 30px;  Cambia esto al tamaño de fuente que desees para 'heading' 
         font-weight: bolder;
         text-transform: uppercase;
     }
     
     .card > span:nth-child(3) {
-        font-size: 26px; /* Cambia esto al tamaño de fuente que desees para 'detail' */
+        font-size: 26px;  Cambia esto al tamaño de fuente que desees para 'detail' 
     }
- }
+ } */
 
- /* Media query para PC escritorio monitor grande */
- @media screen and (min-width: 1224px) and (max-width: 1824px) {
-    .card > span:nth-child(2) {
-        margin-top: 1rem;
-        font-size: 30px; /* Cambia esto al tamaño de fuente que desees para 'heading' */
-        font-weight: bolder;
-        text-transform: uppercase;
-    }
-    
-    .card > span:nth-child(3) {
-        font-size: 26px; /* Cambia esto al tamaño de fuente que desees para 'detail' */
-    }
- }
+ 
