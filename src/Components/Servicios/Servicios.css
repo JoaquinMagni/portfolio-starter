@@ -4,7 +4,7 @@
     height: 90vh;
     margin-bottom: 8rem;
     margin-top: 7rem;  /* MODIFICADO = original (9rem)*/
-    margin-bottom: 13rem;
+    margin-bottom: 6rem;
 }
 
 .awesome {
@@ -72,10 +72,11 @@
     .services {
         margin-top: 0;
         flex-direction: column;
+        align-items: center;
         gap: 5rem;
         height: auto; /* Cambiado de 66rem a auto para adaptarse al contenido */
         padding: 0;
-        margin-top: 20rem;
+        margin-top: 19rem;
     }
 
     .awesome {
@@ -91,7 +92,7 @@
         align-items: center;
         justify-content: center;
         margin-top: -3rem;
-        margin-bottom: 15rem;
+        margin-bottom: 11rem;
         gap: 5rem;
     }
     .card-1, .card-2, .card-3 {
@@ -120,4 +121,144 @@
         margin-right: 14.5rem;
     }
 }
+
+ /* Media query para tablet */
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        height: auto; /* Cambiado de 66rem a auto para adaptarse al contenido */
+        padding: 0;
+        margin-top: 2rem;        
+        margin-bottom: 10rem;
+    }
+
+    .awesome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 15rem;
+        margin-right: 5rem;
+        height: auto;
+        transform: scale(.9);
+    }
+
+    .card-1, .card-2, .card-3 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 1rem 0; /* Ajusta el espacio entre las tarjetas */
+        width: 12rem;
+        height: 8rem;   
+        align-items: center;     
+    }
+
+    .card-1{
+        position: relative;
+        margin-right: 4.5rem;
+    }
+    .card-2{
+        position: relative;
+        margin-left: 5.5rem;
+        margin-top: -2rem;
+    }
+ }
+
+ /* Media query para tablet horizontal */
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        height: auto; /* Cambiado de 66rem a auto para adaptarse al contenido */
+        padding: 0;
+        margin-top: 2rem;        
+        margin-bottom: 10rem;
+    }
+
+    .awesome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 25rem;
+        margin-right: 25rem;
+        height: auto;
+        transform: scale(1.1);
+    }
+
+ }
+
+ /* Media query para PC escritorio */
+ @media screen and (min-width: 1025px) and (max-width: 1224px) {
+    .services{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+
+    .cards{
+        margin-bottom: 35rem;
+        margin-right: 16rem;
+        transform: scale(.9);
+    }
+    
+    
+    .card-1{
+        margin-bottom: 4rem;
+    }
+ }
+
+ /* Media query para PC escritorio monitor grande */
+ @media screen and (min-width: 1224px) and (max-width: 1824px) {
+    .services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -2rem;
+        margin-bottom: 20rem;
+    }
+
+    .awesome{
+        margin-left: -2.5rem;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        transform: scale(1.2);
+    }
+
+    .cards{
+        margin-bottom: 45rem;
+        margin-right: 20rem;
+        transform: scale(.9);
+        margin-top: 28rem;
+    }
+    
+    
+    .card-1{
+        margin-bottom: 4rem;
+    }
+ }
+
+
 

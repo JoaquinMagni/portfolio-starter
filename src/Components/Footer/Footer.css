@@ -34,3 +34,10 @@
     }    
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .f-content {
+        transform: scale(.8);
+        margin-bottom: 2.5rem;
+    }  
+}

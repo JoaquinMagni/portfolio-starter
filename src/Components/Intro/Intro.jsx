@@ -65,7 +65,7 @@ const Intro = () => {
 
             <img src={Vector1} alt='' />
             <img src={Vector2} alt='' />
-            <img src={boy} alt='' />
+            <img src={boy} alt='' className='foto' />
             <img src={glassesimoji} alt="" />
             <div 
                 style={{top: '-4%', left: '68%'}}

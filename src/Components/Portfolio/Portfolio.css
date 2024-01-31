@@ -48,8 +48,8 @@
     .portfolio{
         margin-top: 12rem;
         text-align: center;
-        margin-top: 18rem;
-        margin-bottom: -13rem;
+        margin-top: 14rem;
+        margin-bottom: 10rem;
     }
     
     .portfolio span:nth-of-type(1) {
@@ -64,3 +64,34 @@
       }   
       
 }
+
+ /* Media query para tablet */
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+ }
+
+ /* Media query para PC escritorio */
+ @media screen and (min-width: 1025px) and (max-width: 1224px) {
+  .portfolio{
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+  }
+
+  .portfolio span:nth-of-type(2) {
+    margin-bottom: 4rem;
+  } 
+ }
+
+ @media screen and (min-width: 1224px) and (max-width: 1824px) {
+  .portfolio{
+    margin-bottom: 15rem;
+  }
+
+  .portfolio span:nth-of-type(2) {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  } 
+ }

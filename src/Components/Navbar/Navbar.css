@@ -32,7 +32,7 @@
 
 .n-list > ul{
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     cursor: pointer;
     margin-right: 10rem;
 }
@@ -50,11 +50,20 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 480px) {       
+
+/* Media query para celulares */
+@media screen and (min-width: 320px) and (max-width: 480px) {  
+    .n-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .n-left{
         display: flex;
         justify-content: center;
-        margin-left: 1.5rem;
+        align-items: center;
     }
     .n-list{
         display: none;
@@ -63,3 +72,100 @@
         display: none;
     }
   }
+
+  /* Media query para tablet */
+  @media screen and (min-width: 481px) and (max-width: 768px) { 
+    .n-left{
+        display: flex;
+        justify-content: center;        
+    }
+    .n-list{
+        display: none;
+    }
+    
+  }
+
+  /* Media query para tablet */
+  @media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .n-wrapper{
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: scale(0.9);
+    }
+    
+
+    .n-list{
+        display: none;
+    }
+
+    
+  }
+
+    /* Media query para PC escritorio */
+    @media screen and (min-width: 1025px) and (max-width: 1224px) {
+        .n-wrapper{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15rem;
+        }
+
+        .n-left{            
+            margin-left: -2rem;
+        }
+
+        .n-right{
+            display: flex;
+            justify-content: center;  
+        }
+
+        .n-list > ul{  
+            gap: 2rem;
+            cursor: pointer;
+            margin-left: -3.5rem;
+            margin-right: 3.5rem;
+        }
+
+        .n-button{
+            transform: scale(1.1);
+            margin-left: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* Media query para PC escritorio monitor grande */
+    @media screen and (min-width: 1224px) and (max-width: 1824px) {
+        .n-wrapper{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15rem;
+        }
+
+        .n-left{            
+            margin-left: -2rem;
+        }
+
+        .n-right{
+            display: flex;
+            justify-content: center;  
+        }
+
+        .n-list > ul{  
+            gap: 3.5rem;
+            cursor: pointer;
+            margin-left: 1.5rem;
+            margin-right: 3.5rem;
+            font-size: 25px;
+        }
+
+        .n-button{
+            transform: scale(1.1);
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+    }

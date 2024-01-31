@@ -123,6 +123,7 @@
         flex-direction: column;
         height: 64rem;
         gap: 7rem;
+        margin-top: 2rem;
     }
 
     .i-left {
@@ -166,3 +167,158 @@
     }
 
   }
+
+    /* Media query para tablet */
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        .intro {
+            flex-direction: column;
+            height: 64rem;
+            gap: 7rem;
+            margin-bottom: 5rem;
+        }
+    
+        .i-left {
+            display: flex;
+            position: relative;
+            flex: 1;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center; /* Alinea horizontalmente los elementos hijos al centro */
+            justify-content: center; /* Alinea verticalmente los elementos hijos al centro */
+        }
+    
+        .i-name{
+            align-items: center;
+            text-align: center;
+        }
+    
+        .button.i-button {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    
+        .i-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .i-right{
+            display: flex;
+            transform: scale(0.8);
+            justify-content: center;          
+            align-items: center;
+        }      
+        
+        .i-right>:nth-child(3){
+            justify-content: center;
+            margin-left: 5rem;
+        }
+    
+        .i-right .blur{
+            display: none;
+        }
+    
+        .floating-div:nth-of-type(1){
+            top: -7rem !important;
+        }
+    }
+
+    /* Media query para tablet horizontal */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+        .intro {
+            flex-direction: column;
+            height: 64rem;
+            gap: 7rem;
+            margin-bottom: 5rem;
+        }
+    
+        .i-left {
+            display: flex;
+            position: relative;
+            flex: 1;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center; /* Alinea horizontalmente los elementos hijos al centro */
+            justify-content: center; /* Alinea verticalmente los elementos hijos al centro */
+        }
+
+        .i-name{
+            align-items: center;
+            text-align: center;
+        }
+
+        .i-right{
+            display: flex;
+            justify-content: center;
+            position: relative;            
+            margin-top: 2rem;
+            margin-left: 5rem;
+            transform: scale(.9);
+        }
+        
+        .i-right>*{
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .i-right>:nth-child(1)
+        {
+            transform: scale(0.69);
+            left: -15%;
+            top: -9%;
+        }
+        
+        .i-right>:nth-child(2)
+        {
+            top: -4.6rem;
+            transform: scale(0.67);
+            left: -3rem;
+        }
+        
+        .i-right>:nth-child(3)
+        {
+            transform: scale(0.6);    
+            margin-top: -5rem;
+            margin-right: 5rem;
+            margin-left: -5rem;
+        }
+        
+        .i-right>:nth-child(4)
+        {
+            transform: scale(0.5);
+            top: -19%;
+            left: -24%;
+            border-radius: 50%;
+            padding: 0;
+        }
+
+        .blur{
+            position: absolute;
+            width: 22rem;
+            height: 14rem;
+            border-radius: 50%;
+            background: #edd0ff;    
+            z-index: -9;
+            top: -18%;
+            left: 56%;
+            filter: blur(72px);
+        }       
+    }
+
+    /* Media query para PC escritorio */
+    @media screen and (min-width: 1025px) and (max-width: 1224px) {
+        .intro {    
+            margin-top: -5rem;      
+            margin-bottom: 5rem;
+        }
+    }
+
+    /* Media query para PC escritorio monitor grande */
+    @media screen and (min-width: 1224px) and (max-width: 1824px) {
+        .intro{
+            margin-top: -8rem;
+        }
+    }
