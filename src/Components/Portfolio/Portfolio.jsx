@@ -1,6 +1,8 @@
 import React from 'react'
 import './Portfolio.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Pokedex from '../../img/pokedex.png';
+import Fitclub from '../../img/fitclub.png';
 import Resto from '../../img/resto.png';
 import Planificador from '../../img/planificador.png';
 import Veterinaria from '../../img/veterinaria.png';
@@ -48,6 +50,26 @@ const Portfolio = () => {
         modules={[Pagination]}
         className="portfolio-slider"               
         >
+
+            <SwiperSlide>
+                <a
+                    href="https://therealpokedex.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >                    
+                    <img src={Pokedex} alt="" />                    
+                </a>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <a
+                    href="https://fitgim.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >                    
+                    <img src={Fitclub} alt="" />                    
+                </a>
+            </SwiperSlide>
 
             <SwiperSlide>
                 <a
